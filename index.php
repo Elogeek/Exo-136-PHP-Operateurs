@@ -1,26 +1,31 @@
 <?php
 
-// Premiere ligne
-echo 10 5;
+    // Premiere ligne
+    echo 10 * 5;
+    echo"<br>";
 
-//Deuxieme ligne
-echo 10 2;
+    //Deuxieme ligne
+    echo 10 / 2;
 
-//Troisieme ligne
-if($a $b) {
-    echo "<br><br>a est identique à b";
-}
+    //Troisieme ligne
+    $a = 1;
+    $b = 1;
 
-//Quatrieme ligne
-if($a $b) {
-    echo"<br><br>a n'est pas identique à b";
-}
+    if($a === $b) {
+        echo "<br><br>a est identique à b";
+    }
+
+    //Quatrieme ligne
+    if($a !== $b) {
+        echo"<br><br>a n'est pas identique à b";
+    }
 
 
-//Cinquieme ligne
-$arr1 = ["machin", "truc"];
-$arr2 = ["truc", "machin"];
-if($arr1 $arr2) {
-    echo "<br><br>les tableaux ont le même contenu";
-}
+    //Cinquieme ligne
+    $arr1 = ["machin", "truc"];
+    $arr2 = ["truc", "machin"];
+    if(sort($arr1) === sort($arr2)) {
+        echo "<br><br>les tableaux ont le même contenu";
+    }
 
+?>
